@@ -2,7 +2,7 @@
  --primario: #9C27B0;
  --primarioOscuro: #89119D;
  --secundario: #FFCE00;
- --secundarioOscuro: rgb(233,287,2);
+ --secundarioOscuro: rgb(233,187,2);
  --blanco: #fff;
  --negro: #000;
  --fuentePrincipal:'Staatliches', cursive; 
@@ -274,6 +274,10 @@ height: 40rem;
 
 
 /*Producto*/
+
+.camisa{
+	padding:0  1rem;
+}
 .camisa__contenido{
 	padding: 2rem;
 }
@@ -285,15 +289,17 @@ height: 40rem;
 }
 
 .formulario__select, .formulario__cantidad{
-	padding: 1.5rem 0;
+	padding: 1rem 0;
 	background-color: var(--primario);
 	border: 1rem  solid var(--primarioOscuro);
 	color: var(--blanco);
+	font-size: 2rem;
 }
 
 
 .formulario__boton{
 	padding: 2rem 0;
+	font-size: 2rem;
 	width: 100%;
 	grid-row: 2/3 ;
 	grid-column: 1/ 3;
@@ -302,6 +308,10 @@ height: 40rem;
 	background-color: var(--secundario);
 	color: var(--negro);
 	border: none;
+	transition: background-color .3s ease;
+}
+.formulario__boton:hover{
+background-color: var(--secundarioOscuro);
 }
 
 .camisa__contenido__texto{
