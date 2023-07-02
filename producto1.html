@@ -18,10 +18,25 @@
     <nav class="navegacion">
     	<a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
     	<a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
+        <div class="carrito">
+       <img src="img/icon-cart.svg" alt="carrito" class="carrito__icono">
+       <div class="carrito__barra">
+        <p class="carrito__barra-texto">No hay nada en el carrito</p>
+        <div class="carrito__barra-elemento">
+           <p class="carrito__barra-texto-2"></p>
+       </div>
+
+       </div>
+               <div class="notificacion" ></div>
+
+
+    </div>
+
     </nav>
+    
 
      <main class="contenedor">
-     	<h1>Vue js</h1>
+     	<h1 class="titulo">Vue js</h1>
 
      	<div class="camisa">
      		<img src="img/1.jpg" alt="" class="camisa__imagen">
@@ -38,7 +53,7 @@
      					<option >mediana</option>
      					<option >grande</option>
      				</select>
-     				<input class="formulario__cantidad" type="number" placeholder="cantidad" min="1">
+     				<input class="formulario__cantidad"  type="number" placeholder="cantidad" min="1" max="100">
      				<input class="formulario__boton" type="submit" value="agregar al carrito">
      			</div>
      		</div>
@@ -51,6 +66,6 @@
     <main class="container-principal"></main>
 
 	<footer class="footer"><p class="footer__texto">Frontend Store. Todos los derechos reservaedos</p></footer>
-	
+	<script src="logic.js"></script>
 </body>
 </html>
