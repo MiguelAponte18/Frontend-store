@@ -7,6 +7,8 @@ let titulo= document.querySelector(".titulo");
 let texto= document.querySelector(".carrito__barra-texto");
 let texto2= document.querySelector(".carrito__barra-texto-2");
 let imagen= document.querySelector(".carrito__imagen");
+let notification= document.querySelector(".notificacion");
+
 
 
 
@@ -31,6 +33,9 @@ if(bandera ===0){
  	 texto.textContent =`Añadido al carrito`;
 	 texto2.textContent = `Camiseta: ${nombre} Talla: ${talla} Cantidad: ${valor} Precio: $${precioTotal}`;
  	 bandera =1;
+ 	 notification.textContent = 1;
+
+ 	 	notification.style.visibility != 'visible'?notification.style.visibility = 'visible': notification.style.visibility = 'hidden';
 	// statement
 }
 
@@ -43,4 +48,5 @@ boton.addEventListener("click", ()=>{
 
 	barra.style.visibility != 'visible'?barra.style.visibility = 'visible': barra.style.visibility = 'hidden';
    
+
 })

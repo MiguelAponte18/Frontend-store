@@ -379,7 +379,7 @@ box-shadow:  0px 5px 5px 5px rgba(50,50,50,0.6) ;
 
 }
 .notificacion{
-    visibility: 
+    visibility: hidden;
    	background-color: #d00;
    height: 1.3em;
    width: 1.3em;
