@@ -1,6 +1,6 @@
 :root{
- --primario: #9C27B0;
- --primarioOscuro: #89119D;
+ --primario: #000;
+ --primarioOscuro: #333;
  --secundario: #FFCE00;
  --secundarioOscuro: rgb(233,187,2);
  --blanco: #fff;
@@ -93,9 +93,12 @@ text-align: center;
 .producto{
 	background-color: var(--primarioOscuro);
 	padding: 1rem;
+
 	
 }
-
+.producto__imagen{
+	
+}
 
 .producto__informacion{
 	text-align: center;
@@ -274,6 +277,10 @@ height: 40rem;
 
 .camisa{
 	padding:0  1rem;
+	
+}
+.camisa__imagen{
+  border-radius: 1rem;
 }
 .camisa__contenido{
 	padding: 2rem;
